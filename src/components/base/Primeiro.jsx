@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default () => (
-    <h1>
+    <h2>
         Hello, React!
-    </h1>
+    </h2>
 )

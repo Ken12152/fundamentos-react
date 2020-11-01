@@ -7,7 +7,7 @@ export default props => {
 
     return (
         <div>
-            <h1>Random</h1>
+            <h2>Random</h2>
             <p>Min: { min }</p>
             <p>Max: { max }</p>
             <p>Random: { random }</p>

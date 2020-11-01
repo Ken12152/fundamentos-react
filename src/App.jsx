@@ -1,3 +1,5 @@
+import './App.css'
+
 import React from 'react'
 
 import Primeiro from './components/base/Primeiro'
@@ -5,14 +7,33 @@ import ComParametro from './components/base/ComParametro'
 import Fragmento from './components/base/Fragmento'
 import Random from './components/base/Random'
 
+import Card from './components/layout/Card'
+
 export default function App(props) {
     return (
-        <div>
+        <div className="App">
             <h1>Fundamentos React</h1>
-            <Random min={50} max={100} />
-            <Fragmento />
-            <ComParametro titulo="Avaliacao" aluno="Solid Snake" nota={80.0} />
-            <Primeiro></Primeiro> 
+
+            <div className="Cards">
+                <Card titulo="#05 Card" border="white">
+                    <h2>Criar Cards</h2>
+                </Card>
+                <Card titulo="#04 Random" color="#7fff7f" border="yellow">
+                    <Random min={50} max={100} />
+                </Card>
+
+                <Card titulo="#03 Fragmento" color="#7fffff" border="red">
+                    <Fragmento />
+                </Card>
+
+                <Card titulo="#02 ComParametro" color="#ffff7f">
+                    <ComParametro titulo="Avaliacao" aluno="Solid Snake" nota={80.0} />
+                </Card>
+
+                <Card titulo="#01 Primeiro" color="#ff7fff" border="000">
+                    <Primeiro />
+                </Card>
+            </div>
         </div>
     )
 }
