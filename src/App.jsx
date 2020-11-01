@@ -2,18 +2,26 @@ import './App.css'
 
 import React from 'react'
 
+// Base
 import Primeiro from './components/base/Primeiro'
 import ComParametro from './components/base/ComParametro'
 import Fragmento from './components/base/Fragmento'
 import Random from './components/base/Random'
 
+// Base -> Membro
 import Familia from './components/base/Familia'
 import FamiliaMembro from './components/base/FamiliaMembro'
 
+// Layout Card 
 import Card from './components/layout/Card'
 
+// Repeticao
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelasAlunos from './components/repeticao/TabelasAlunos'
+
+// Condicional
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default function App(props) {
     return (
@@ -21,6 +29,16 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo="#09 If">
+                    <UsuarioInfo usuario={{ nome: 'Raiden' }} />
+                    <UsuarioInfo usuario={{ email: 'Raiden@gmail.com' }} />
+                    <UsuarioInfo usuario={{ nome: 'Snake' }} />
+                </Card>
+
+                <Card titulo="#08 Condicional">
+                    <ParOuImpar num={7} />
+                </Card>
+                    
                 <Card titulo="#07 Desafio Repeticao">
                     <TabelasAlunos />
                 </Card>
