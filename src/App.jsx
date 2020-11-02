@@ -33,12 +33,20 @@ import Input from './components/formulario/Input'
 // Contador
 import Contador from './components/contador/Contador'
 
+// Megasena
+import Megasena from './components/megasena/Megasena'
+
+
 export default function App(props) {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo="#13 Megasena">
+                    <Megasena />
+                </Card>
+                    
                 <Card titulo="#12 Contador" color="#424242" border="#424242">
                     <Contador numeroInicial={12}/>
                 </Card>
