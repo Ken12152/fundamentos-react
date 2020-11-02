@@ -23,13 +23,26 @@ import TabelasAlunos from './components/repeticao/TabelasAlunos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 
+// Comunicacao
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+
+
 export default function App(props) {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
-                <Card titulo="#09 If">
+                <Card titulo="#10 Comunicacao Indireta">
+                    <IndiretaPai />
+                </Card>
+
+                <Card titulo="#09 Comunicacao Direta">
+                    <DiretaPai />
+                </Card>
+
+                <Card titulo="#08 If">
                     <UsuarioInfo usuario={{ nome: 'Raiden' }} />
                     <UsuarioInfo usuario={{ email: 'Raiden@gmail.com' }} />
                     <UsuarioInfo usuario={{ nome: 'Snake' }} />
